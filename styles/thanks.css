@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: black;
+    --secondary-color: #343633;
+    /*#9cafb7;*/
+    --accent1-color: #adb993;
+    /*#c2948a;*/
+    --accent2-color: #d0d38f;
+    --accent3-color: #f6ca83;
+    --accent4-color: #949d6a;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    font-weight: lighter;
+    /*display: flex;
+    flex-direction: column;*/
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+header {
+    padding: 10px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    border-bottom: 4px groove #EDE9E8;
+    font-size: 20px;
+}
+
+#menu {
+    display: none;
+    flex-direction: column;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+#menu.open {
+
+    position: relative;
+    display: flex;
+    height: 200px;
+    margin-bottom: 50px;
+    /*top: 125px;*/
+}
+
+#menu-button {
+    display: block;
+    height: 50px;
+    margin-top: 18px;
+}
+
+header nav a {
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--accent4-color);
+    color: var(--primary-color);
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: blue;
+    background-color: var(--accent4-color);
+}
+
+
+#page-title {
+    font-size: 1rem;
+    padding: 30px;
+    width: 20%;
+    text-align: center;
+    margin-right: 50px;
+
+}
+
+#jazminruiz {
+    width: 70px;
+}
+
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+
+
+}
+
+.h1small {
+    font-size: 25px;
+}
+
+h2 {
+    padding: 2px;
+    background-color: var(--secondary-color);
+    color: var(--accent3-color);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    /*max-width: 800px;*/
+    margin: 0 auto;
+
+
+}
+
+main {
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+
+    align-items: center;
+}
+
+.menu {
+    text-align: center;
+}
+
+footer p {
+    padding: 20px;
+}
+
+
+
+
+footer {
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--accent3-color);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /*align-items: center;*/
+    margin-top: 15px;
+    text-align: left;
+    padding: 30px 70px 30px 70px;
+
+}
+
+footer div {
+    font-weight: 200;
+}
+
+footer span {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.social-media {
+    text-align: center;
+    text-decoration: none;
+}
+
+/*site Plan*/
+
+
+.dark1 {
+    background-color: var(--secondary-color);
+    color: var(--accent3-color);
+}
+
+.dark1 div a {
+    background-color: var(--accent4-color);
+    color: var(--primary-color);
+    padding: 15px;
+    text-decoration: none;
+    margin-top: 20px;
+
+    width: 200px;
+}
+
+.light1 {
+    background-color: var(--accent4-color);
+}
+
+.strengths {
+    text-align: center;
+}
+
+.strengths div {
+    width: 250px;
+}
+
+.light2 {
+    background-color: var(--accent2-color);
+
+}
+
+.light2 img {
+    background-color: var(--accent2-color);
+
+}
+
+
+.message {
+    width: 60%;
+    height: 400px;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.message h1,
+.message h2{
+    padding: 20px;
+}
+.message h2{
+    margin-bottom: 20px;
+}
+.message p{
+    font-family: 'Source Code Pro',monospace;
+}

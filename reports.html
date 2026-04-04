@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timmy Bolivia Products</title>
+    <meta name="description" content="Products - Timmy Bolivia">
+    <meta name="author" content="Jazmin Ruiz">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/index-small.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Source+Code+Pro&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/ecotierraicon.ico">
+    <meta property="og:title" content="Timmy Bolivia">
+    <meta property="og:description"
+        content="Products of Timmy Bolivia. Unite us. Bolivia is a country with a big diversity and culture, as our products.">
+    
+    <meta property="og:url" content="https://jazmiruiz16.github.io/wdd231/Ecotierra/index.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image"
+        content="https://rtpbolivia.com.bo/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-24-at-19.09.52-1024x768.jpeg" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Timmy Bolivia">
+</head>
+
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="my icon" id="jazminruiz">
+        <span id="page-title">Timmy Bolivia</span>
+
+        <nav id="menu">
+            <a id="home" href="index.html" >Home</a>
+            <a id="about" href="about.html">About Us</a>
+            <a id="products" href="products.html">Reports</a>
+            <a id="contact" href="contact.html">Contact Us</a>
+        </nav>
+        <button id="menu-button">☰</button>
+    </header>
+    
+    
+    <main class="index">
+
+        <h1 class="hero-text">Timmy Bolivia<br>Your Reports</h1>
+        <img src="images/heroimage.jpg" alt="Timmy Bolivia" class="hero">
+        <dialog id="myModal" class="modalbox">
+            <h2>Possible sightings of :</h2><button id="closeModal1">❌</button>
+        </dialog>
+        <div class="menu">
+            <button id="vegetables" class="linkBox">Vegetables</button>
+            <button id="care" class="linkBox">Personal Care</button>
+        </div>
+        <div id="listPhotos" class="gridclass directorygrid"></div>
+        
+    
+    </main>
+    
+
+   
+    <footer>
+        <div>
+            <span> Timmy Bolivia</span>
+            <p>
+                1392 Av. Mariscal Sta. Cruz Avenue<br>
+                La Paz, Bolivia<br>
+                https://www.cnc.bo/<br>
+                +591 2 2378606
+            </p>
+        </div>
+        <nav class="social-media">
+            <a href="https://www.linkedin.com/in/jazmin-ruiz-aab80817b">
+                <img src="images/youtube.svg" alt="jazminruiz16" width="50">
+            </a>
+            <a href="https://www.linkedin.com/in/jazmin-ruiz-aab80817b">
+                <img src="images/twitter.svg" alt="Bolivia Rafting" width="50">
+            </a>
+            <a href="https://www.linkedin.com/in/jazmin-ruiz-aab80817b">
+                <img src="images/linkedin.svg" alt="linkedin" width="50">
+            </a>
+            <a href="https://www.linkedin.com/in/jazmin-ruiz-aab80817b">
+                <img src="images/x-twitter.svg" alt="x-twitter" width="40">
+            </a>
+        </nav>
+        <div>
+            <p>
+                WDD330 Class Project<br>
+                Jazmin Ruiz<br>
+                © <span id="currentyear"></span> Timmy Bolivia<br>
+                Last modification: <span id="lastModified"></span>
+            </p>
+        </div>
+
+    </footer>
+    
+    <script src="scripts/products.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+</body>
+
+</html>

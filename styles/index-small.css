@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: black;
+    --secondary-color: #343633;/*#9cafb7;*/
+    --accent1-color: #adb993;
+    /*#c2948a;*/
+    --accent2-color: #d0d38f;
+    --accent3-color: #f6ca83;
+    --accent4-color: #949d6a;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    font-weight: lighter;
+    /*display: flex;
+    flex-direction: column;*/
+
+
+}
+
+
+header {
+    padding: 10px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    background-color:var(--accent1-color);
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    border-bottom: 4px groove #EDE9E8;
+    font-size: 20px;
+}
+
+#menu {
+    display: none;
+    flex-direction: column;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+#menu.open {
+
+    position: relative;
+    display: flex;
+    height: 200px;
+    margin-bottom: 50px;
+    /*top: 125px;*/
+}
+
+#menu-button {
+    display: block;
+    height: 50px;
+    margin-top: 18px;
+}
+
+header nav a {
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--accent4-color);
+    color: var(--primary-color);
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: blue;
+    background-color: var(--accent4-color);
+}
+
+.hero {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    opacity: 70%;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    position: absolute;
+    z-index: 2;
+    text-align: left;
+    color: var(--primary-color);
+    padding-left: 10px;
+
+}
+
+#page-title {
+    font-size: 1rem;
+    padding: 30px;
+    width: 20%;
+    text-align: center;
+    margin-right: 50px;
+
+}
+
+#jazminruiz {
+    width: 70px;
+}
+
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+    
+
+}
+
+.h1small {
+    font-size: 25px;
+}
+
+h2 {
+    padding: 2px;
+    background-color: var(--secondary-color);
+    color: var(--accent3-color);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    /*max-width: 800px;*/
+    margin: 0 auto;
+
+
+}
+
+main {
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+
+    align-items: center;
+}
+
+.menu {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer p {
+    padding: 20px;
+}
+
+
+
+.gridclass {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.listclass {
+
+    font-size: 12px;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+
+}
+
+.listclass div {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    border-top: 1px solid #7ea8be;
+    height: 30px;
+}
+
+
+.gridclass section,
+aside,
+.strengths div {
+
+    border-right: 3px groove #EDE9E8;
+    border-bottom: 3px groove #EDE9E8;
+    border-left: 1px solid #EDE9E8;
+    border-top: 1px solid #EDE9E8;
+    padding: 20px;
+    margin: 5px;
+    width: 300px;
+}
+
+.gridclass figure {
+    background-color: var(--accent2-color);
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 18px;
+    
+}
+.gridclass figure span{
+    font-size: 25px;
+    
+}
+footer {
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--accent3-color);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /*align-items: center;*/
+    margin-top: 15px;
+    text-align: left;
+    padding: 30px 70px 30px 70px;
+
+}
+
+footer div {
+    font-weight: 200;
+}
+
+footer span {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.social-media {
+    text-align: center;
+    text-decoration: none;
+}
+/*site Plan*/
+
+/*HOME PAGE*/
+.card3 {
+    text-align: center;
+    align-content: center;
+}
+
+.card3 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /*horizontalmente*/
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.card2 h2 {
+    width: 100%;
+}
+
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    text-align: center;
+}
+
+.dark1 {
+    background-color: var(--secondary-color);
+    color: var(--accent3-color);
+}
+
+.dark1 div a {
+    background-color: var(--accent4-color);
+    color: var(--primary-color);
+    padding: 15px;
+    text-decoration: none;
+    margin-top: 20px;
+
+    width: 200px;
+}
+
+.light1 {
+    background-color: var(--accent4-color);
+}
+
+.strengths {
+    text-align: center;
+}
+
+.strengths div {
+    width: 250px;
+}
+
+.light2 {
+    background-color: var(--accent2-color);
+
+}
+
+.light2 img {
+    background-color: var(--accent2-color);
+
+}
+
+/*HOME PAGE*/
+#form{
+    display: flex;
+    flex-direction: column;
+}
+#form label{
+    display: flex;
+    flex-direction: column;
+    
+}
+#button{
+    margin-left: 0px;
+    margin-top: 10px;
+}
+.card3 img {
+    width: 90%;
+}
+
+
+
+.message h1,
+.message h2 {
+    padding: 20px;
+    /*NEW*/
+}
+
+.strengths p {
+    font-family: 'Source Code Pro', monospace;
+}
+
+/*NEW*/
+.animationbox{
+    position: relative;
+}
+
+@keyframes grow {
+    from {
+        width: 5px;
+        margin-right: 110px;
+        margin-bottom: -25px;
+    }
+
+    to {
+        width: 50px;
+        margin-right: 110px;
+        margin-bottom: 5px;
+    }
+}
+
+#calling {
+    width: 5px;
+    position: absolute;
+    
+    margin-right: 110px;
+    margin-bottom: -25px;
+    animation-name: grow;
+    animation-duration: 7s;
+    animation-iteration-count: 7;
+    animation-delay: 5s;
+}
+
+/*Contact Page*/
+.card2 div {
+    
+    padding: 20px;
+}
+.card2 div a img{
+    width: 220px;
+    margin-top: 30px;
+}
+/*PRODUCT PAGE*/
+.modalbox div h2 {
+    width: 80%;
+    text-align: left;
+}
+:modal {
+    margin: 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;   
+}
+.modalbox div{
+    text-align: center;
+}
+#closeModal1{
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 2px;
+}
+
+.directorygrid>figure {
+
+    border-right: 3px groove #EDE9E8;
+    border-bottom: 3px groove #EDE9E8;
+    border-left: 1px solid #EDE9E8;
+    border-top: 1px solid #EDE9E8;
+    padding: 20px;
+    margin: 5px;
+    width: 300px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.gridclass>figure {
+    background-color: var(--accent3-color);
+}
+
+.directorygrid {
+    justify-items: center;
+}
+
+
+.directorygrid figure img {
+    padding: 2px;
+    width: 250px;
+
+}
+
+.directorygrid figcaption span {
+    font-family: Lato, sans-serif;
+}
+
+.directorygrid figcaption {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+}
+
+.linkBox {
+    width: 140px;
+    height: 50px;
+    margin-left: 55px;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 10px;
+    border-right: 3px groove #EDE9E8;
+    border-bottom: 3px groove #EDE9E8;
+    border-left: 1px solid #EDE9E8;
+    border-top: 1px solid #EDE9E8;
+    text-decoration: none;
+}
+.bigfont{
+    font-size: 20px;
+}
+#vegetables {
+    margin-left: 0px;
+}
+/*ABOUT PAGE*/
+.flexclass {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.about{
+    font-size: 17px;
+    padding: 5px;
+    margin: 2px;
+}
+.aboutcard1, .aboutcard2 {
+    padding: 30px;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.aboutcard1 h2 {
+    width: 100%;
+}
+.aboutcard1 div {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.aboutcard1 div a img {
+    width: 95%;
+    margin-top: 30px;
+}
+.aboutcard2 div div{
+    margin-left: 20%;
+    width: 60%;
+}
+.aboutcard2 h2{
+    text-align: center;
+}
+.aboutcard2 h3{
+    margin-bottom: 10px;
+}
