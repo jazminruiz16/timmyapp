@@ -75,33 +75,139 @@
                     <fieldset>
                         <legend>I found a dog:</legend>
                 
-                        <label>First name *
-                            <input type="text" name="fname" autocomplete="given-name" title="Enter your first name" required>
+                        <label>Color *
+                            <select name="fname" autocomplete="Unidentify" title="Select a color" required >
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                                <option value="brown">Brown</option>
+                                <option value="beige">Beige</option>
+                                <option value="gray">Gray</option>
+                                <option value="gold">Gold</option>
+                                <option value="cinnamon">Cinnamon</option>
+                                <option value="spotted">Spotted</option>
+                                <option value="tricolor">Tricolor</option>
+                                <option value="brindle">Brindle</option>
+                                <option value="other">Other</option>
+                            </select>
                         </label>
-                        <label>Last name *
-                            <input type="text" name="lname" autocomplete="family-name" title="Enter your last name" required>
+                        <label>Size *
+                            <select name="fname" autocomplete="Unidentify" title="Select a color" required>
+                                <option value="verysmall">Very small (less than 30 cm)</option>
+                                <option value="small" title="As a cat">Small (30-45 cm)</option>
+                                <option value="medium">Medium (45-65 cm)</option>
+                                <option value="large" title="As a german shepherd">Large (65-85 cm)</option>
+                                <option value="extralarge">Extra Large (more than 85 cm)</option>
+
+                            </select>
                         </label>
-                        
+                        <label>Coat Type *
+                            <select name="coat" title="Select a coat type" required>
+                                <option value="short">Short</option>
+                                <option value="medium">Medium</option>
+                                <option value="long">Long</option>
+                                <option value="curly">Curly</option>
+                                <option value="double">Double coat</option>
+                                <option value="hairless">Hairless</option>
+                               
+                            </select>
+                        </label>
+                        <label>Where did you see the pet? Copy the location link on Google Maps or click "report" and your current location will be shared. *
+                            <input type="email" name="email" autocomplete="" title="Enter the link of Google Maps" required>
+                        </label>
                         <label>Email *
-                            <input type="email" name="email" autocomplete="email" title="Enter your email" required>
+                            <input type="email" name="email" autocomplete="" title="Enter your email" required>
                         </label>
-                        <label>Cell Phone *
+                        <label>Cell Phone
                             <input type="tel" name="phone" autocomplete="tel" title="Enter your cell phone" required>
                         </label>
                         <label>
-                            We are happy to answer any questions:
+                            Add any other description here:  
                             <textarea name="question" rows="5" title="If you have any question, please enter them here."></textarea>
+                        </label>
+                        <label>
+                            Add a photo:
+                            <input type="file" id="fileInput" accept="image/*">
+                            
+                            <img id="preview" src="" alt="Vista previa" style="max-width: 300px; display: none;">
+                            
+                            <!--<button id="uploadBtn">Subir Imagen</button>-->
                         </label>
                         <button id="button" class="linkBox" type="submit">Report</button>
                     </fieldset>
                 </form>
             </div>
-            <aside class="light2" id="weather"></aside>
+            <aside class="light2" id="weather">
+                <form id="formpost" action="thanks.html" method="GET" class="dark1">
+                    <fieldset>
+                        <legend>I lost my dog:</legend>
+                
+                        <label>Color *
+                            <select name="colorpost" autocomplete="Unidentify" title="Select a color" required>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                                <option value="brown">Brown</option>
+                                <option value="beige">Beige</option>
+                                <option value="gray">Gray</option>
+                                <option value="gold">Gold</option>
+                                <option value="cinnamon">Cinnamon</option>
+                                <option value="spotted">Spotted</option>
+                                <option value="tricolor">Tricolor</option>
+                                <option value="brindle">Brindle</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </label>
+                        <label>Size *
+                            <select name="sizepost" autocomplete="Unidentify" title="Select a color" required>
+                                <option value="verysmall">Very small (less than 30 cm)</option>
+                                <option value="small" title="As a cat">Small (30-45 cm)</option>
+                                <option value="medium">Medium (45-65 cm)</option>
+                                <option value="large" title="As a german shepherd">Large (65-85 cm)</option>
+                                <option value="extralarge">Extra Large (more than 85 cm)</option>
+                
+                            </select>
+                        </label>
+                        <label>Coat Type *
+                            <select name="coatpost" title="Select a coat type" required>
+                                <option value="short">Short</option>
+                                <option value="medium">Medium</option>
+                                <option value="long">Long</option>
+                                <option value="curly">Curly</option>
+                                <option value="double">Double coat</option>
+                                <option value="hairless">Hairless</option>
+                
+                            </select>
+                        </label>
+                        <label>Where did you last see your pet? Copy the location link on Google Maps or click "report" and your current
+                            location will be shared. *
+                            <input type="email" name="locationpost" autocomplete="" title="Enter the link of Google Maps" required>
+                        </label>
+                        <label>Email *
+                            <input type="email" name="emailpost" autocomplete="" title="Enter your email" required>
+                        </label>
+                        <label>Cell Phone
+                            <input type="tel" name="phonepost" autocomplete="tel" title="Enter your cell phone" required>
+                        </label>
+                        <label>
+                            Add any other description here:
+                            <textarea name="question" rows="5" title="If you have any question, please enter them here." id="postdescription"></textarea>
+                        </label>
+                        <label>
+                            Add a photo:
+                            <input type="file" id="fileInputpost" accept="image/*">
+                
+                            <img id="previewpost" src="" alt="Vista previa" style="max-width: 300px; display: none;">
+                
+                            <!--<button id="uploadBtn">Subir Imagen</button>-->
+                        </label>
+                        <button id="buttonpost" class="linkBox" type="submit">Post</button>
+                    </fieldset>
+                </form>
+            </aside>
             <section class="card3 dark1">
-                <h2>The Difference Of The Best Of Nature.</h2>
+                <h2>Fun facts</h2>
                 
                 <div class="animationbox">
-                    <p>Take care of yourself and the planet with our sustainable options.</p>
+                    <p>Learn to understand them</p>
                     <img id="calling" src="images/calling.svg" alt="Timmy Bolivia">
                     <a href="products.html">Know More</a>
                 </div>
