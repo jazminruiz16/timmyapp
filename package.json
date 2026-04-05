@@ -7,7 +7,7 @@
     "start": "vite",
     "build": "vite build --emptyOutDir",
     "preview": "vite preview",
-    "lint": "eslint *.js src/**/*.js",
+    "lint": "eslint .",
     "format": "prettier --config .prettierrc --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
     "test": "jest"
   },
@@ -24,11 +24,12 @@
   },
   "homepage": "https://github.com/jazminruiz16/timmyapp#readme",
   "devDependencies": {
+    "@eslint/js": "^9.39.0",
     "eslint": "^9.39.4",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-import": "^2.32.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^17.4.0",
     "jest": "^30.3.0",
-    "prettier": "^3.8.1",
-    "vite": "^8.0.3"
+    "prettier": "^3.2.5",
+    "vite": "^5.0.12"
   }
 }
