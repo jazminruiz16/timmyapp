@@ -125,14 +125,7 @@ h2 {
     color: var(--accent3-color);
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    /*max-width: 800px;*/
-    margin: 0 auto;
 
-
-}
 
 main {
     color: var(--primary-color);
@@ -178,8 +171,7 @@ footer p {
 }
 
 
-.gridclass section,
-aside,
+.gridclass section,.gridclass aside,
 .strengths div {
 
     border-right: 3px groove #EDE9E8;
@@ -210,6 +202,7 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    margin: 0 auto;
     /*align-items: center;*/
     margin-top: 15px;
     text-align: left;
@@ -258,13 +251,16 @@ footer span {
 
 
 
-aside fieldset{
+aside fieldset, #formreport fieldset, fieldset label, fieldset div, .card2 fieldset div {
     display: flex;
     flex-direction: column;
     
     justify-content: space-around;
     font-size: 15px;
     text-align: left;
+}
+fieldset div {
+    justify-items: left;
 }
 aside{
     width: 100%;
@@ -325,7 +321,7 @@ aside h2{
     
 }
 #button{
-    margin-left: 0px;
+    
     margin-top: 10px;
 }
 .card3 img {
@@ -380,7 +376,7 @@ aside h2{
     
     padding: 20px;
 }
-.card2 div a img{
+.card2 div img{
     width: 220px;
     margin-top: 30px;
 }
@@ -444,10 +440,10 @@ aside h2{
     font-size: 15px;
 }
 
-.linkBox {
+.linkBox, #buttonreport {
     width: 140px;
     height: 50px;
-    margin-left: 55px;
+    
     background-color: var(--accent2-color);
     color: var(--primary-color);
     text-align: center;
@@ -457,6 +453,8 @@ aside h2{
     border-left: 1px solid #EDE9E8;
     border-top: 1px solid #EDE9E8;
     text-decoration: none;
+    
+    margin-top: 10px;
 }
 .bigfont{
     font-size: 20px;

@@ -7,45 +7,50 @@
     <title>Timmy Bolivia Home Page</title>
     <meta name="description" content="Home Page of Timmy Bolivia">
     <meta name="author" content="Jazmin Ruiz">
-    <link rel="stylesheet" href="styles/thanks.css">
+
+    <link rel="stylesheet" href="styles/index-small.css">
     <link rel="stylesheet" href="styles/index-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Source+Code+Pro&display=swap"
         rel="stylesheet">
     <link rel="icon" href="images/ecotierraicon.ico">
-    <meta property="og:title" content="timmy Bolivia">
-    <meta property="og:description"
-        content="Home page of timmy Bolivia. Unite us. Bolivia is a country with a big diversity and culture, as our products.">
-    
-    <meta property="og:url" content="https://jazmiruiz16.github.io/wdd231/Ecotierra/index.html">
+    <meta property="og:title" content="Timmy Bolivia">
+    <meta property="og:description" content="Home page of Timmy Bolivia.">
+
+    <meta property="og:url" content="https://jazmiruiz16.github.io/timmy/index.html">
     <meta property="og:locale" content="en_US">
     <meta property="og:image"
         content="https://rtpbolivia.com.bo/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-24-at-19.09.52-1024x768.jpeg" />
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="timmy Bolivia">
-
+    <meta property="og:site_name" content="Timmy Bolivia">
 
 </head>
 
 <body>
     <header>
-        
-        <span id="page-title">Form completed successfully!</span>
 
-        
+        <img src="images/icon.svg" alt="my icon" id="jazminruiz">
+        <span id="page-title">Timmy Bolivia</span>
+
+        <nav id="menu">
+            <a id="home" href="index.html">Home</a>
+            <a id="about" href="about.html">About Us</a>
+            <a id="products" href="reports.html">Reports</a>
+
+        </nav>
+        <button id="menu-button">☰</button>
     </header>
 
-    <main class="message" id="filledform">
-        <h1 class="h1small">Every lost dog deserves to find their way home.</h1>
-        <h2>Thanks, you have uploaded <span id="counter"></span> reports.</h2>
-        
+    <main class="index">
+        <h1 class="hero-text">Timmy Bolivia<br>Home Page</h1>
+        <img src="images/heroimage.jpg" alt="Timmy Bolivia" class="hero">
         
 
     </main>
     <footer>
         <div>
-            <span> Timmy</span>
+            <span> Timmy Bolivia</span>
             <p>
                 1392 Av. Mariscal Sta. Cruz Avenue<br>
                 La Paz, Bolivia<br>
@@ -69,17 +74,18 @@
         </nav>
         <div>
             <p>
-                WDD231 Class Project<br>
+                WDD330 Class Project<br>
                 Jazmin Ruiz<br>
-                © <span id="currentyear"></span> timmy Bolivia<br>
+                © <span id="currentyear"></span> Timmy Bolivia<br>
                 Last modification: <span id="lastModified"></span>
             </p>
         </div>
-    
-    </footer>
-    <script src="scripts/localstorageform.js" defer></script>
-    <script src="scripts/forms.js" defer></script>
-</body>
 
+    </footer>
+    <!--<script src="scripts/index.js" defer></script>
+    <script src="scripts/weather.js" defer></script>-->
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+    <script src="scripts/searchFoundPet.js" type="module"></script>
+</body>
 
 </html>

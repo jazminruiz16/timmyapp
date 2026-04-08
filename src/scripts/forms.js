@@ -1,15 +1,15 @@
 const form = document.querySelector("#form");
 const filledform = document.getElementById('filledform');
 const params = new URLSearchParams(window.location.search);
-const fname = params.get('fname');
-const lname = params.get('lname');
-const email = params.get('email');
-const phone = params.get('phone');
-const question = params.get('question');
+const color = params.get('colorpost');
+const sizepost = params.get('sizepost');
+const coatpost = params.get('coatpost');
+const emailpost = params.get('emailpost');
+const phonepost = params.get('phonepost');
 
 
 const listData = document.createElement("div");
-listData.innerHTML = `<p>First name: ${fname}</p><p>Last name: ${lname}</p><p>Email: ${email}</p><p>Mobile number: ${phone}</p>`;
+listData.innerHTML = `<p>Color: ${color}</p><p>Size: ${sizepost}</p><p>Coat Type: ${coatpost}</p><p>Email: ${emailpost}</p><p>Phone: ${phonepost}</p>`;
 filledform.appendChild(listData);
 listData.classList.add("centerbox");
 

@@ -1,0 +1,60 @@
+import { ref, push, onValue } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+import { db } from "./firebase-config.js";
+export function UploadReport() {
+    const btn_photoreport = document.querySelector('#btn-photoreport');
+    const imagereport = document.querySelector('#photo-report');
+    let widget_cloudinaryreport = cloudinary.createUploadWidget({
+        cloudName: 'dpmq0o5st',
+        uploadPreset: 'preset_timmy',
+    }, (err, result) => {
+        if (!err && result && result.event === 'success') {
+            console.log('Success upload', result.info);
+            imagereport.src = result.info.secure_url;
+        }
+    });
+    btn_photoreport.addEventListener('click', () => {
+        widget_cloudinaryreport.open();
+    }, false);
+    const petsRef = ref(db, "petspost");
+    const buttonreport = document.getElementById("buttonreport");
+    buttonreport.addEventListener("click", function () {
+        const colorreport = document.getElementById("colorreport").value;
+        const sizereport = document.getElementById("sizereport").value;
+        const coatreport = document.getElementById("coatreport").value;
+        const locationreport = document.getElementById("locationreport").value;
+        const emailreport = document.getElementById("emailreport").value;
+        const phonereport = document.getElementById("phonereport").value;
+        const descriptionreport = document.getElementById("descriptionreport").value;
+        const imagepetreport = imagereport.src;
+
+        push(petsRef, {
+            colorreport: colorreport,
+            sizereport: sizereport,
+            coatreport: coatreport,
+            locationreport: locationreport,
+            emailreport: emailreport,
+            phonereport: phonereport,
+            otherdescdescriptionreportription: descriptionreport,
+            imagepetreport: imagepetreport,
+            status: 'found'
+
+        });
+    });
+
+}
+
+
+// Leer datos en tiempo real
+/*onValue(personasRef, (snapshot) => {
+    const lista = document.getElementById("lista");
+    lista.innerHTML = "";
+
+    snapshot.forEach((child) => {
+        const data = child.val();
+
+        const li = document.createElement("li");
+        li.textContent = `${data.nombre} - ${data.edad}`;
+
+        lista.appendChild(li);
+    });
+});*/

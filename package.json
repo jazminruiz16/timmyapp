@@ -31,5 +31,12 @@
     "jest": "^30.3.0",
     "prettier": "^3.2.5",
     "vite": "^5.0.12"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "firebase": "^12.11.0",
+    "mongodb": "^7.1.1",
+    "mongoose": "^9.4.1"
   }
 }
