@@ -23,7 +23,7 @@ export function UploadPetProfile() {
     });
     btn_photo.addEventListener('click', () => {
         widget_cloudinary.open();
-    }, false);//16:41
+    }, false);
     
 
     const petsRef = ref(db, "petspost");
