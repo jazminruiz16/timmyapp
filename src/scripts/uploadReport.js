@@ -28,14 +28,14 @@ export function UploadReport() {
         const imagepetreport = imagereport.src;
 
         push(petsRef, {
-            colorreport: colorreport,
-            sizereport: sizereport,
-            coatreport: coatreport,
-            locationreport: locationreport,
-            emailreport: emailreport,
-            phonereport: phonereport,
-            otherdescdescriptionreportription: descriptionreport,
-            imagepetreport: imagepetreport,
+            colorpost: colorreport,
+            sizepost: sizereport,
+            coatpost: coatreport,
+            locationpost: locationreport,
+            emailpost: emailreport,
+            phonepost: phonereport,
+            otherdescription: descriptionreport,
+            imagepet: imagepetreport,
             status: 'found'
 
         });
