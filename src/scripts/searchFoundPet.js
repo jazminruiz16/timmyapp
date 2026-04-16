@@ -1,4 +1,5 @@
 let searchpet = document.querySelector('#searchpet');
+let foundpet = document.querySelector('#foundpet');
 const searchpetIcon = document.querySelector('#searchpet-icon');
 const captionDesc = document.querySelector('figcaption');
 
@@ -26,12 +27,14 @@ buttonsearch.addEventListener("click", function () {
 
             
             let n = 0;
+            foundpet.innerHTML = "";
             filterC.forEach(pet => {
                 n = n + 1;
                 const listItem = document.createElement("div");
                 listItem.innerHTML = `<p id="coat${n}">${pet.coatpost}</p><p id="color${n}">${pet.colorpost}</p><p id="location${n}">${pet.locationpost}</p><p id="size${n}">${pet.sizepost}</p><img src="${pet.imagepet}" alt="my pet" loading="lazy"><button id="${n}" class="linkBox" >Search</button>`;
                 searchpet.appendChild(listItem);
                 let button = listItem.querySelector('button')
+                foundpet.innerHTML = "";
                 button.addEventListener("click", function () {
                     /*const number = btn.id;
                     console.log(number);
@@ -47,8 +50,8 @@ buttonsearch.addEventListener("click", function () {
                     console.log(filterpets);
                     filterpets.forEach(petreport => {
                         const listPet = document.createElement("div");
-                        listPet.innerHTML = `<title>Found</title><p>Coat: ${petreport.coatpost}<br>Color: ${petreport.colorpost}</p><p>Size: ${petreport.sizepost}<br>Other description: ${petreport.otherdescription}</p><img src="${petreport.imagepet}" alt="a pet" loading="lazy"><a href="${petreport.locationpost}">Location</a>`;
-                        searchpet.appendChild(listPet);
+                        listPet.innerHTML = `<title>Found</title><p>Coat: ${petreport.coatpost}<br>Color: ${petreport.colorpost}</p><p>Size: ${petreport.sizepost}<br>Other description: ${petreport.otherdescription}</p><img src="${petreport.imagepet}" alt="a pet" loading="lazy"><a class="linkBox" href="${petreport.locationpost}">Location</a>`;
+                        foundpet.appendChild(listPet);
                         
                     });
                     

@@ -1,0 +1,21 @@
+#foundpet, #searchpet div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#foundpet img, #searchpet img{
+    width: 300px;
+}
+#foundpet div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 320px;
+}
+@media screen and (min-width:900px) {
+    #foundpet {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

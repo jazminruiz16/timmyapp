@@ -37,7 +37,7 @@
         <nav id="menu">
             <a id="home" href="index.html" >Home</a>
             <a id="about" href="about.html">About Us</a>
-            <a id="products" href="reports.html">Reports</a>
+            <a id="products" href="myreports.html">Reports</a>
             
         </nav>
         <button id="menu-button">☰</button>
@@ -111,9 +111,10 @@
                     
                             </select>
                         </label>
-                        <label>Where did you last see your pet? Copy the location link on Google Maps: *
+                        <label>Where did you last see your pet? Copy the location link on Google Maps or get the link to your current location with the button: *
                             <input type="text" name="locationpost" id="locationreport" title="Enter the link of Google Maps"
                                 required>
+                            <button type="button" class="linkBox" id="locationbtn">Get your current location</button>
                         </label>
                         <label>Email *
                             <input type="email" name="emailpost" id="emailreport"  title="Enter your email" required>
@@ -126,11 +127,9 @@
                             <textarea name="question" id="descriptionreport" rows="5"
                                 title="If you have any question, please enter them here." id="postdescription"></textarea>
                         </label>
-                        <div>
-                            <img id="photo-report">
-                            <button type="button" class="linkBox" id="btn-photoreport">Upload photo</button>
-                        </div>
                         
+                        <img id="photo-report">
+                        <button type="button" class="linkBox" id="btn-photoreport">Upload photo</button>
                         
                         <button id="buttonreport" class="linkBox" onclick="UploadReport()">Post</button>
                     
@@ -205,12 +204,12 @@
                 </form>
             </aside>
             <section class="card3 dark1">
-                <h2>Fun facts</h2>
+                <h2>Timmy website</h2>
                 
                 <div class="animationbox">
-                    <p>Learn to understand them</p>
+                    <p>Discover how our goal of reuniting families with their pets grew.</p>
                     <img id="calling" src="images/calling.svg" alt="Timmy Bolivia">
-                    <a href="products.html">Know More</a>
+                    <a href="about.html">Know More</a>
                 </div>
             
             </section>
