@@ -3,7 +3,7 @@ const firstvisit = document.getElementById("first");
 const lastvisit = document.getElementById("last");
 const date = new Date();
 const today = date.getDate();
-const month = date.getMonth();
+const month = date.getMonth()+1;
 const year = date.getFullYear();
 const todaystring = today + "/" + month + "/" + year;
 console.log("today:"+todaystring);

@@ -390,13 +390,7 @@ aside img{
     width: 80%;
     text-align: left;
 }
-:modal {
-    margin: 10%;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    position: relative;   
-}
+
 .modalbox div{
     text-align: center;
 }

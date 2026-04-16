@@ -76,7 +76,8 @@
                         <legend>I lost my dog:</legend>
                     
                         <label>Color *
-                            <select name="colorpost" id="colorreport" autocomplete="Unidentify" title="Select a color" required>
+                            <select name="colorpost" id="colorreport" title="Select a color" required>
+                                <option value="" selected disabled>Select an option</option>
                                 <option value="black">Black</option>
                                 <option value="white">White</option>
                                 <option value="brown">Brown</option>
@@ -91,7 +92,8 @@
                             </select>
                         </label>
                         <label>Size *
-                            <select name="sizepost" id="sizereport" autocomplete="Unidentify" title="Select a color" required>
+                            <select name="sizepost" id="sizereport" title="Select a color" required>
+                                <option value="" selected disabled>Select an option</option>
                                 <option value="verysmall">Very small (less than 30 cm)</option>
                                 <option value="small" title="As a cat">Small (30-45 cm)</option>
                                 <option value="medium">Medium (45-65 cm)</option>
@@ -102,6 +104,7 @@
                         </label>
                         <label>Coat Type *
                             <select name="coatpost" id="coatreport" title="Select a coat type" required>
+                                <option value="" selected disabled>Select an option</option>
                                 <option value="short">Short</option>
                                 <option value="medium">Medium</option>
                                 <option value="long">Long</option>
@@ -114,8 +117,9 @@
                         <label>Where did you last see your pet? Copy the location link on Google Maps or get the link to your current location with the button: *
                             <input type="text" name="locationpost" id="locationreport" title="Enter the link of Google Maps"
                                 required>
-                            <button type="button" class="linkBox" id="locationbtn">Get your current location</button>
+                            
                         </label>
+                        <button type="button" class="linkBox" id="locationbtn">Get your current location</button>
                         <label>Email *
                             <input type="email" name="emailpost" id="emailreport"  title="Enter your email" required>
                         </label>
@@ -128,7 +132,7 @@
                                 title="If you have any question, please enter them here." id="postdescription"></textarea>
                         </label>
                         
-                        <img id="photo-report">
+                        <img id="photo-report" src="" alt="Photo of the pet">
                         <button type="button" class="linkBox" id="btn-photoreport">Upload photo</button>
                         
                         <button id="buttonreport" class="linkBox" onclick="UploadReport()">Post</button>
@@ -143,7 +147,8 @@
                         <legend>I lost my dog:</legend>
                 
                         <label>Color *
-                            <select name="colorpost" id="colorpost" autocomplete="Unidentify" title="Select a color" required>
+                            <select name="colorpost" id="colorpost" title="Select a color" required>
+                                <option value="" selected disabled>Select an option</option>
                                 <option value="black">Black</option>
                                 <option value="white">White</option>
                                 <option value="brown">Brown</option>
@@ -158,7 +163,8 @@
                             </select>
                         </label>
                         <label>Size *
-                            <select name="sizepost" id="sizepost" autocomplete="Unidentify" title="Select a color" required>
+                            <select name="sizepost" id="sizepost"  title="Select a color" required>
+                                <option value="" selected disabled>Select an option</option>
                                 <option value="verysmall">Very small (less than 30 cm)</option>
                                 <option value="small" title="As a cat">Small (30-45 cm)</option>
                                 <option value="medium">Medium (45-65 cm)</option>
@@ -169,6 +175,7 @@
                         </label>
                         <label>Coat Type *
                             <select name="coatpost" id="coatpost" title="Select a coat type" required>
+                                <option value="" selected disabled>Select an option</option>
                                 <option value="short">Short</option>
                                 <option value="medium">Medium</option>
                                 <option value="long">Long</option>
@@ -195,7 +202,7 @@
                         
                     </fieldset>
                     <div>
-                        <img id="pet-photo">
+                        <img id="pet-photo" src="" alt="Photo of our pet">
                         <button type="button" class="linkBox" id="btn-photo">Upload photo</button>
                     </div>
 

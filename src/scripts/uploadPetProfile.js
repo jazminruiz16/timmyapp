@@ -1,12 +1,4 @@
-/*-	UploadPetProfile: The user can upload a description of her pet and a photo.
--	SelectByMunicipality: When a user wants to report a found pet, he can search if there is a similar pet reported as lost. In order to avoid big data with pets with similar descriptions that are far away from the reporting location.
--	Reports: If a lost pet will have a report, the information will appear in a page linked to the main page.
--	SearchPet: The owner who has lost his pet can search for it by its id.
--	InformationPets: The users can get information about dog breeds
--	UploadReport: The user can upload a report of a found pet.
--	OptionstoDescribe: The user can obtain options in order to describe the found pet.
--	SearchFoundPet: The user can search for the found pet among the pets reported as lost by the description and see their photos in order to compare.
-*/
+
 import {ref, push, onValue } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 import { db } from "./firebase-config.js";
 export function UploadPetProfile() {
