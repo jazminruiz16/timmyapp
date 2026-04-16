@@ -1,3 +1,9 @@
+section{
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
 #foundpet, #searchpet div{
     display: flex;
     flex-direction: column;

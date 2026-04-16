@@ -13,7 +13,7 @@ listData.innerHTML = `<p>Color: ${color}</p><p>Size: ${sizepost}</p><p>Coat Type
 filledform.appendChild(listData);
 listData.classList.add("centerbox");
 
-const button = document.getElementById('menu-button');
+/*const button = document.getElementById('menu-button');
 const menu = document.getElementById('menu');
 const header = document.querySelector('header');
 const listPhotos = document.getElementById('listPhotos');
@@ -32,6 +32,6 @@ button.addEventListener("click", function () {
 
     }
 
-});
+});*/
 
 

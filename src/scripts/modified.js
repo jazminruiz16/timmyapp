@@ -10,7 +10,6 @@ const menu = document.getElementById('menu');
 const header = document.querySelector('header');
 
 
-
 button.addEventListener("click", function () {
     menu.classList.toggle('open');
     if (button.innerHTML === '☰') {
