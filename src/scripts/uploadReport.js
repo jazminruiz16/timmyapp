@@ -39,7 +39,7 @@ export function UploadReport() {
         navigator.geolocation.getCurrentPosition(success, error);
 
     });
-    const petsRef = ref(db, "petspost");
+    const petsRef = ref(db, "pestsreport");
     const buttonreport = document.getElementById("buttonreport");
     buttonreport.addEventListener("click", function () {
         const colorreport = document.getElementById("colorreport").value;
@@ -68,17 +68,3 @@ export function UploadReport() {
 }
 
 
-// Leer datos en tiempo real
-/*onValue(personasRef, (snapshot) => {
-    const lista = document.getElementById("lista");
-    lista.innerHTML = "";
-
-    snapshot.forEach((child) => {
-        const data = child.val();
-
-        const li = document.createElement("li");
-        li.textContent = `${data.nombre} - ${data.edad}`;
-
-        lista.appendChild(li);
-    });
-});*/
